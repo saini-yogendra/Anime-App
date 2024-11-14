@@ -21,7 +21,7 @@ class TopAnimesList extends StatelessWidget {
         if (snapshot.data != null) {
           final animes = snapshot.data!.toList();
           // return data
-          return TopAnimesImageSlider(animes: animes);
+          return TopAnimeImageSlider(animes: animes);
         }
 
         return ErrorScreen(error: snapshot.error.toString());

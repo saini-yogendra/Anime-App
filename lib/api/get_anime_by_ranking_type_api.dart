@@ -10,8 +10,7 @@ Future<Iterable<Anime>> getAnimeByRankingTypeApi({
   required String rankingType,
   required int limit,
 }) async {
-  final baseUrl =
-      'https://api.myanimelist.net/v2/anime/ranking?ranking_type=$rankingType&limit=$limit';
+  final baseUrl = "https://api.myanimelist.net/v2/anime/ranking?ranking_type=$rankingType&limit=$limit";
 
   final response = await http.get(
     Uri.parse(baseUrl),
